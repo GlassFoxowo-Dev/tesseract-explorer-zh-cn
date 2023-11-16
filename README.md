@@ -1,6 +1,11 @@
+# 写在前面
+
+在冲浪的时候看到了这个项目，于是萌生了翻译它的想法，花了点时间，翻译成了简体中文。  
+转载请保留原作者与译者的名字，谢谢。
 # Tesseract Explorer
 
-欢迎来到第四维度！请访问[这里](https://tsherif.github.io/tesseract-explorer/)查看实时应用！
+欢迎来到第四维度！请访问[这里](https://tsherif.github.io/tesseract-explorer/)查看实时应用！  
+玻狸的中文翻译版本：[中文版点这里](https://glassfoxowo-dev.github.io/tesseract-explorer-zh-cn/)
 
 ![Tesseract](img/tesseract-350x350.png?raw=true)
 
@@ -12,7 +17,7 @@
 
 ## Tesseract Explorer
 
-[Tesseract Explorer](https://tsherif.github.io/tesseract-explorer/)提供了各种工具，用于可视化4D tesseract投影到3D空间的过程。tesseract可以在4D空间中进行操作，然后使用[WebGL 2](https://get.webgl.org/webgl2/)在浏览器中渲染其在3D空间中的投影。
+[超立方体浏览器-中文](https://glassfoxowo-dev.github.io/tesseract-explorer-zh-cn/)提供了各种工具，用于可视化4D tesseract投影到3D空间的过程。tesseract可以在4D空间中进行操作，然后使用[WebGL 2](https://get.webgl.org/webgl2/)在浏览器中渲染其在3D空间中的投影。
 
 ### 3D视图控制
 
@@ -29,11 +34,11 @@
     - `perspective`：在W轴上离原点一定距离放置4D空间中的“相机”。离相机更远的单元投影到比较小的立方体，而离相机更近的单元则投影为畸变的立方体（或[视锥](https://en.wikipedia.org/wiki/Frustum)）。
     - `orthographic`：投影将4D场景平展到3D，不受距离引起的任何缩放影响。一个tesseract的以单元为基础的视图将正交投影到一个3D立方体。
 
-- **颜色**：
+- **着色方式**：
     - `axis`：按轴着色，X轴对着红色，Y轴对着绿色，Z轴对着蓝色，W轴对着黄色。
     - `cell`：每个单元都单独着色。在轴上的一对单元将具有其轴颜色的浅色和深色阴影，正单元为深色，负单元为浅色。
 
-- **展开**：将tesseract的单元旋转到3D空间中，形成[达利十字](https://en.wikipedia.org/wiki/Polycube#Octacubes_and_hypercube_unfoldings)的形式。
+- **展开程度**：将tesseract的单元旋转到3D空间中，形成[达利十字](https://en.wikipedia.org/wiki/Polycube#Octacubes_and_hypercube_unfoldings)的形式。
 
 - **旋转**：将tesseract沿4D空间中轴对旋转的6个平面之一旋转。前3个旋转包括W轴，因此将更直接地影响投影。
 
