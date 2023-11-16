@@ -1,54 +1,52 @@
 # Tesseract Explorer
 
-Welcome to the 4<sup>th</sup> dimension! Visit the live application [here](https://tsherif.github.io/tesseract-explorer/)!
+欢迎来到第四维度！请访问[这里](https://tsherif.github.io/tesseract-explorer/)查看实时应用！
 
 ![Tesseract](img/tesseract-350x350.png?raw=true)
 
-## What is a Tesseract?
+## 什么是Tesseract？
 
-A [tesseract](https://en.wikipedia.org/wiki/Tesseract), also known as a hypercube or 8-cell, is the 4D analog to the 2D square and the 3D cube. Its 3D "surface" is composed of 8 cubes, called cells, 2 along each of the 4 axes, X, Y, Z, and W. These cells enclose the 4D hypervolume of the tesseract. A way to imagine the shape of the tesseract is that space is folded in such a way that each of the six faces of each cell are flush with one face of 6 other cells, with the only cell left out being the opposite one on the same axis. This is analogous to the 4 edges of each square face of a 3D cube being flush with the edges of 4 of its other faces, an impossible formation in 2D space, but possible with the folding into 3D.
+[tesseract](https://en.wikipedia.org/wiki/Tesseract)，也称为超立方体或8-胞体，是2D正方形和3D立方体的四维模拟体。其3D“表面”由8个立方体（称为单元）组成，每个沿着4个轴线（X、Y、Z和W）有2个。这些单元封闭了tesseract的四维超体积。想象tesseract的形状的一种方式是，空间被折叠，使得每个单元的六个面都与其他6个单元的一个面相平行，而唯一被排除的单元是沿着同一轴的对面的单元。这类似于3D立方体的每个正方形面的4条边与其他4个面的边相平行，这在2D空间中是不可能的形状，但在折叠到3D时是可能的。
 
-Obviously, we can't directly visualize a tesseract, since we live in only 3 dimensions, but we can project its form into 3D space, essentially taking "photographs" from 4 dimensions onto the 3D "film" of our universe (in the same way we photograph our 3D universe onto the 2D film of a camera). I highly recommend [this site](http://eusebeia.dyndns.org/4d/vis/vis) for a primer on visualizing 4D shapes.
-
+显然，我们无法直接可视化一个tesseract，因为我们只生存在三维空间中，但我们可以将其形式投影到3D空间，实质上是将4维的“照片”投影到我们宇宙的3D“胶片”上（就像我们用相机将我们的3D宇宙摄影到2D相机胶片上一样）。我强烈推荐[这个网站](http://eusebeia.dyndns.org/4d/vis/vis)以了解对于可视化4D形状的入门知识。
 
 ## Tesseract Explorer
 
-The [Tesseract Explorer](https://tsherif.github.io/tesseract-explorer/) provides a variety of tools for visualizing the projections of a 4D tesseract into 3D space. The tesseract can be manipulated in 4D space, and its projection into 3D space is then rendered in the browser using [WebGL 2](https://get.webgl.org/webgl2/).
+[Tesseract Explorer](https://tsherif.github.io/tesseract-explorer/)提供了各种工具，用于可视化4D tesseract投影到3D空间的过程。tesseract可以在4D空间中进行操作，然后使用[WebGL 2](https://get.webgl.org/webgl2/)在浏览器中渲染其在3D空间中的投影。
 
-### 3D View Controls
+### 3D视图控制
 
-The 3D projection of the tesseract can be explored using the mouse. Click and drag to orbit the camera, and use the mouse wheel to zoom in and out.
+可以使用鼠标探索tesseract的3D投影。单击并拖动以围绕摄像机旋转，使用鼠标滚轮进行缩放。
 
-### Control Panel Options
+### 控制面板选项
 
-- **Rendering**:
-    - `transparent`: Transparent rendering of the projection.
-    - `cutout`: Opaque rendering of the projection with holes cut out of each face to expose the internal cells.
-    - `solid`: Opaque rendering of the projection. 
+- **渲染**：
+    - `transparent`：透明渲染投影。
+    - `cutout`：投影的不透明渲染，每个面上都有剪切出的孔，以显示内部单元。
+    - `solid`：投影的不透明渲染。
 
-- **Projection**:
-    - `perspective`: A "camera" in 4D space is placed at some distance from the origin along the W-axis. Cells further from camera project to smaller cubes than nearer cells. Cells at an angle to the hyperplane of projection appear as distorted cubes (or [frustums](https://en.wikipedia.org/wiki/Frustum)).
-    - `orthographic`: Projection flattens the 4D scene to 3D without any scaling due to distance. A cell-first view of a tesseract will project orthographically to a 3D cube.
+- **投影**：
+    - `perspective`：在W轴上离原点一定距离放置4D空间中的“相机”。离相机更远的单元投影到比较小的立方体，而离相机更近的单元则投影为畸变的立方体（或[视锥](https://en.wikipedia.org/wiki/Frustum)）。
+    - `orthographic`：投影将4D场景平展到3D，不受距离引起的任何缩放影响。一个tesseract的以单元为基础的视图将正交投影到一个3D立方体。
 
-- **Colorization**:
-    - `axis`: Cells are colored by axis, with the X-axis pair colored red, the Y-axis pair colored green, the Z-axis pair colored blue, and W-axis pair colored yellow.
-    - `cell`: Each cell is colored separately. The coloring of the pair of cells on an axis will be light and dark shades of their axis coloring, with the positive cell having the darker shade and the negative cell, the lighter one.
+- **颜色**：
+    - `axis`：按轴着色，X轴对着红色，Y轴对着绿色，Z轴对着蓝色，W轴对着黄色。
+    - `cell`：每个单元都单独着色。在轴上的一对单元将具有其轴颜色的浅色和深色阴影，正单元为深色，负单元为浅色。
 
-- **Unfold**: Rotate the cells of the tesseract into 3D space in the form of a [Dalí cross](https://en.wikipedia.org/wiki/Polycube#Octacubes_and_hypercube_unfoldings).
+- **展开**：将tesseract的单元旋转到3D空间中，形成[达利十字](https://en.wikipedia.org/wiki/Polycube#Octacubes_and_hypercube_unfoldings)的形式。
 
-- **Rotate**: Rotate the tesseract along any of the 6 planes formed by pairs of axes in 4D space. The first 3 rotations include the W-axis, and thus will affect the projection more directly.
+- **旋转**：将tesseract沿4D空间中轴对旋转的6个平面之一旋转。前3个旋转包括W轴，因此将更直接地影响投影。
 
-- **Autorotate**: Animate rotation of the tesseract along any of the 6 planes formed by pairs of axes in 4D space.
+- **自动旋转**：在4D空间中由轴对形成的6个平面上旋转tesseract的动画。
 
-- **Scale**: Scale the tesseract along any of the 4 axes in 4D space. Scaling shows a sweep across the 4D hypervolume (in the same way scaling a 3D cube along one axis shows the sweep across its internal 3D volume).
+- **缩放**：在4D空间中沿4个轴缩放tesseract。缩放显示了4D超体积的扫过（就像沿一个轴缩放3D立方体显示了其内部3D体积的扫过）。
 
-- **Cell Visibility**: Hide or show individual cells. This can make it easier to follow certain transformations.
+- **单元可见性**：隐藏或显示单个单元。这可以使跟踪某些变换变得更容易。
 
+## 其他资源
 
-## Other Resources
+以下是我发现在理解4D可视化方面非常有帮助的资源：
 
-The following are resources I found extremely helpful in understanding 4D visualizations:
-
-- [4D Visualization](http://eusebeia.dyndns.org/4d/vis/vis) article series
-- [Dimensions](https://www.youtube.com/playlist?list=PL3C690048E1531DC7) video series by Jos Leys, Étienne Ghys, and Aurélien Alvarez
-- [4D Toys](https://4dtoys.com/) game by Marc ten Bosch
+- [4D Visualization](http://eusebeia.dyndns.org/4d/vis/vis) 文章系列
+- [Dimensions](https://www.youtube.com/playlist?list=PL3C690048E1531DC7) 由Jos Leys、Étienne Ghys和Aurélien Alvarez制作的视频系列
+- [4D Toys](https://4dtoys.com/) 由Marc ten Bosch制作的游戏
