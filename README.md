@@ -5,7 +5,7 @@
 # Tesseract Explorer
 
 欢迎来到第四维度！请访问[这里](https://tsherif.github.io/tesseract-explorer/)查看实时应用！  
-玻狸的中文翻译版本：[中文版点这里](https://glassfoxowo-dev.github.io/tesseract-explorer-zh-cn/)
+玻狸的中文翻译版本：[中文版点这里](https://foxderin.github.io/tesseract-explorer-zh-cn/)
 
 ![Tesseract](img/tesseract-350x350.png?raw=true)
 
